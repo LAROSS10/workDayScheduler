@@ -1,71 +1,159 @@
-body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  line-height: 1;
-}
+.grid {
 
-textarea{
-  background: transparent;
-  border: none;
-  resize: none;
-  color: #000000;
-  border-left: 1px solid black;
-  padding: 10px;
+    
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+  grid-template-areas:
+  "time9 input9 button9"
+  "time10 input10 button10"
+  "time11 input11 button11"
+  "time12 input12 button12"
+  "time1 input1 button1"
+  "time2 input2 button2"
+  "time3 input3 button3"
+  "time4 input4 button4"
+  "time5 input5 button5"   
 }
-
-.jumbotron {
+.time9 {
+  grid-area: time9;
+  background-color: lightgray;
   text-align: center;
-  background-color: transparent;
-  color: black;
-  border-radius: 0;
-  border-bottom: 10px solid black;
+  
+
 }
 
-.description{
-  white-space: pre-wrap;
-}
-
-.time-block{
+.time10 {
+  grid-area: time10;
+  background-color: lightgray;
   text-align: center;
-  border-radius: 15px;
+}
+.time11 {
+  grid-area: time11;
+ background-color: lightgray;
+  text-align: center;
+}
+.time12 {
+  grid-area: time12;   
+  text-align: center;
+ 
+  background-color: lightgray;
+}
+.time1 {
+  grid-area: time1;   
+  text-align: center;  
+  background-color: lightgray;
+}
+.time2 {
+  grid-area: time2;
+  background-color: lightgray;
+  text-align: center;
+}
+.time3 {
+  grid-area: time3;
+  background-color: lightgray;
+  text-align: center;
+}
+.time4 {
+  grid-area: time4;
+  background-color: lightgray;
+  text-align: center;
+}
+.time5 {
+  grid-area: time5;
+  background-color: lightgray;
+  text-align: center;
 }
 
-.row {
-  white-space: pre-wrap;
-  height: 80px;
-  border-top: 1px solid white;;
+.input9 {
+grid-area: input9;
+border-style: solid;
+display: grid;
+
+
 }
 
-.hour {
-  background-color: #ffffff;
-  color: #000000;
-  border-top: 1px dashed #000000;
+.test{
+  width: 332;
+}
+.input10 {
+  grid-area: input10;
+  display: grid;
+  }
+
+.input11 {
+      grid-area: input11;
+      display: grid;
+}
+      .input12 {
+          grid-area: input12;
+          display: grid;
+          }
+          .input1 {
+              grid-area: input1;
+              display: grid;
+              }
+              .input2 {
+                  grid-area: input2;
+                  display: grid;
+                  }
+                  .input3 {
+                      grid-area: input3;
+                      display: grid;
+                      display: grid;
+                      }
+                      .input4 {
+                          grid-area: input4;
+                          display: grid;
+                          }
+                          .input5 {
+                              grid-area: input5;
+                              display: grid;
+                              }
+.button9 {
+  grid-area: button9;
 }
 
-.past {
-  background-color: #d3d3d3;
-  color: white;
+.button10 {
+  grid-area: button10;
 }
 
-.present {
-  background-color: #ff6961;
-  color: white;
+.button11 {
+  grid-area: button11;
+}
+
+.button12 {
+  grid-area: button12;
+}
+
+.button1 {
+  grid-area: button1;
+}
+
+.button2 {
+  grid-area: button2;
+}
+
+.button3 {
+  grid-area: button3;
+}
+
+.button4 {
+  grid-area: button4;
+}
+
+.button5 {
+  grid-area: button5;
 }
 
 .future {
-  background-color: #77dd77;
-  color: white;
+  background-color: green; 
 }
 
-.saveBtn {
-  border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: #06AED5;
-  color: white;
+.present {
+  background-color: grey;
 }
 
-.saveBtn i:hover {
-  font-size: 20px;
-  transition: all .3s ease-in-out;
+.past {
+  background-color: red;
 }
